@@ -1,3 +1,439 @@
 *{
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
     background-color: black;
+    color: white;
 }
+
+/* Shared Styles */
+
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    background: none;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;  
+    background: none;
+}
+
+h4{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    background: none;
+}
+
+h5{
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: white;
+    background: none;
+}
+
+.description{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0.75rem 0;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    background: none;
+}
+
+section{
+    max-width: 1060px;
+    margin: 0 auto 6.25rem;
+}
+
+.centered-text{
+    text-align: center;
+}
+
+/* Header */
+
+header{
+    padding-top: 4rem;
+    margin-bottom: 6.25rem;
+    background-image: linear-gradient(rgba(17, 17, 17, 1), rgba(119, 119, 119, 0));
+}
+
+/* Nav-Bar */
+
+#nav-bar{
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+}
+
+#nav-links{
+    display: flex;
+    gap: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 3rem;
+    padding: 0.75rem 1.5rem 0.75rem 0;
+    background: none;
+}
+
+#nav-links li, a{
+    list-style: none;
+    text-decoration: none;
+    background: none;
+}
+
+.nav-link{
+    font-size: 1.125rem;
+}
+
+#home{
+    background-color: #E6533C;
+    border: none;
+    border-radius: 2.5rem;
+    padding: 0.5rem 1.25rem;
+    margin: 0.25rem;
+}
+
+#nav-brand{
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #E6533C;
+    font-style: italic;
+    background: none;
+}
+
+#ham-bars{
+    font-size: 1.125rem;
+    color: white;
+    display: none;
+}
+
+/* Banner */
+
+#banner{
+    margin: 2rem auto 0;
+    max-width: 1060px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+}
+
+#banner-left{
+    width: 37.5rem;
+    padding-right: 5rem;
+    background: none;
+}
+
+#banner-heading{
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+    background: none;
+}
+
+#shape{
+    font-family: Dancing Script; 
+    font-size: 1.6em;
+    font-weight: 100;
+    background: none;
+}
+
+#btn-container{
+    background: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.btn-primary{
+    font-size: 18px;
+    font-weight: 700;
+    width: 14rem;
+    padding: 16px 40px;
+    background: none;
+    background-color: #E6533C;
+    border: none;
+    border-radius: 42px;
+    margin-top: 1rem;
+}
+
+#btn-app{
+    font-size: 18px;
+    font-weight: 700;
+    width: 14rem;
+    padding: 16px 40px;
+    background: none;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 42px;
+    margin-top: 1rem;
+}
+
+#banner-right{
+    background: none;
+    position: relative;
+}
+
+#banner-img{
+    background: none;
+}
+
+#card-1{
+    padding: 1rem 1.5rem;
+    width: 10rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    position: absolute;
+    top: 120px;
+    left: 230px;
+}
+
+#card-1-num{
+    background: none;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+#card-1-para{
+    background: none;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.65);
+    margin-top: 0.5rem;
+}
+
+#card-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 1rem 1.5rem;
+    width: 10rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    position: absolute;
+    top: 430px;
+    left: -100px; 
+}
+
+#play-icon{
+    background: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: #E6533C;
+}
+
+#card-2-text{
+    background: none;
+}
+
+#card-2-num{
+    background: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+#card-2-para{
+    background: none;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.65);
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 992px) {
+    #nav-bar{
+        max-width: 734px;
+    }
+    #banner{
+        max-width: 734px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    #banner-left{
+        margin-top: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #nav-bar{
+        max-width: 353px;
+    }
+    #nav-links{
+        display: none;
+    }
+    #ham-bars{
+        display: contents;
+    }
+    #banner{
+        max-width: 353px;
+        flex-direction: column;
+    }
+    #banner-left{
+        max-width: 353px;
+        margin: 3rem auto 0;
+    }
+    #banner-heading{
+        font-size: 2.5rem;
+        line-height: 120%;
+    }
+    #shape{
+        font-size: 3rem;
+    }
+    #btn-container{
+        flex-direction: column;
+    }
+    .btn-primary{
+        width: 100%;
+    }
+    #btn-app{
+        width: 100%;
+    }
+    #card-1{
+        width: 7rem;
+        padding: 0.5rem 1rem;
+    }
+    #card-1-num{
+        font-size: 1.5rem;
+    }
+    #card-1-para{
+        font-size: 0.75rem;
+        margin-top: 0.25rem;
+    }
+    #card-2{
+        width: 8rem;
+        padding: 0.5rem 1rem;
+        left: -50px;
+    }
+    #play-icon{
+        font-size: 2rem;
+    }
+    #card-2-num{
+        font-size: 1.25rem;
+    }
+    #card-2-para{
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
+    }
+}
+
+/* Change Your Habits */
+
+#habits-text{
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+#habits-container{
+    margin: 3rem auto 0;
+    max-width: 1060px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+}
+
+.habit-img{
+    margin-bottom: 2rem;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    width: 184px;
+    height: 184px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 992px) {
+    #habits-text{
+        max-width: 30rem;
+    }
+    #habits-container{
+        max-width: 530px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 576px) {
+    #habits-text{
+        max-width: 20rem;
+    }
+    #habits-container{
+        max-width: 336px;
+        grid-template-columns: 1fr;
+    }
+    h2{
+        font-size: 2rem;
+    }
+}
+
+/* Run an Extra Mile */
+
+#run-extra-mile{
+    background-color: rgba(34, 34, 34, 1);
+    padding: 2rem;
+    border: none;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#run-text{
+    background: none;
+    max-width: 40%;
+    margin-left: 1.25rem;
+}
+
+#run-img-container{
+    width: 40%;
+    border: none;
+    background: none;
+}
+
+#run-img{
+    width: 100%;
+    border: none;
+    border-radius: 18px;
+    background: none;
+}
+
+@media screen and (max-width: 992px) {
+    #run-extra-mile{
+        max-width: 900px;
+        margin: 0 auto 3.25rem;
+    }
+    #run-text>h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #run-extra-mile{
+        max-width: 353px;
+        padding: 2rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    #run-text>h2 {
+        font-size: 2rem;
+    }
+    #run-text{
+        margin: 0;
+        max-width: 100%;
+    }
+    #run-img-container{
+        margin: 2rem 0 0;
+        width: 100%;
+    }
+    .btn-primary{
+        width: 100%;
+    }
+}
+
