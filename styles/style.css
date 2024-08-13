@@ -575,12 +575,12 @@ td{
     }
 
     #calculate-bmi{
-        width: 23rem;
+        max-width: 95%;
         margin: 0 0 3rem;
     }
 
     .input{
-        width: calc(11.5rem - 6px);
+        width: 100%;
         padding: 0.875rem 0;
         font-size: 0.875rem;
     }
